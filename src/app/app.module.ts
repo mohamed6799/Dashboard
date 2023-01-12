@@ -13,7 +13,10 @@ import { FilesComponent } from './Components/files/files.component';
 import { PlansComponent } from './Components/plans/plans.component';
 import { Navbar2Component } from './Components/navbar2/navbar2.component';
 import { Error404Component } from './Components/error404/error404.component';
-
+import { ProjectsComponent } from './Components/projects/projects.component';
+import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+import { FriendsProfileComponent } from './Components/friends-profile/friends-profile.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,11 +29,15 @@ import { Error404Component } from './Components/error404/error404.component';
     FilesComponent,
     PlansComponent,
     Navbar2Component,
-    Error404Component
+    Error404Component,
+    ProjectsComponent,
+    FriendsProfileComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

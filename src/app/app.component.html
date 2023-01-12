@@ -1,17 +1,37 @@
 <div class="web">
     <div class="navbar1">
-        <h1>Mohamed</h1>
+        <div class="item">
+            <h3>M7md</h3>
         <ul>
-            <li><a href="">Dashboard</a></li>
-            <li><a href="">Dashboard</a></li>
-            <li><a href="">Dashboard</a></li>
-            <li><a href="">Dashboard</a></li>
-            <li><a href="">Dashboard</a></li>
-            <li><a href="">Dashboard</a></li>
+            <li><a routerLink="dashboard" routerLinkActive="RouterActive"><i class="fa-regular fa-chart-bar fa-fw"></i><span>dashboard</span></a></li>
+            <li><a routerLink="settings" routerLinkActive="RouterActive"><i class="fa-solid fa-gear"></i><span>Settings</span></a></li>
+            <li><a routerLink="profile" routerLinkActive="RouterActive"><i class="fa-solid fa-user"></i><span>Profile</span></a></li>
+            <li><a routerLink="projects" routerLinkActive="RouterActive"><i class="fa-solid fa-diagram-project"></i><span>Projects</span></a></li>
+            <li><a routerLink="courses" routerLinkActive="RouterActive"><i class="fa-solid fa-graduation-cap"></i><span>Courses</span></a></li>
+            <li><a routerLink="friends" routerLinkActive="RouterActive"><i class="fa-solid fa-user-group"></i><span>Friends</span></a></li>
+            <li><a routerLink="files" routerLinkActive="RouterActive"><i class="fa-regular fa-file"></i><span>Files</span></a></li>
+            <li><a routerLink="plans" routerLinkActive="RouterActive"><i class="fa-regular fa-credit-card"></i><span>Plans</span></a></li>
         </ul>
+        </div>
     </div>
     <div class="contentWebSite">
-        <div class="navbar2"></div>
+        <div class="navbar2">
+            <div class="item">
+                <div class="search">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                    <input  type="text" class="input" placeholder="Type A Keyword">
+                </div>
+                <div class="person">
+                    <i class="fa-regular fa-bell"></i>
+                    <a routerLink="profile"><img src="../assets/imgs/avatar.png" alt=""></a>
+                </div>
+            </div>
+        </div>
         <router-outlet></router-outlet>
     </div>
 </div>
+
+

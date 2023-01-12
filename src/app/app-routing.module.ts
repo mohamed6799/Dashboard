@@ -7,6 +7,7 @@ import { FilesComponent } from './Components/files/files.component';
 import { FriendsComponent } from './Components/friends/friends.component';
 import { PlansComponent } from './Components/plans/plans.component';
 import { ProfileComponent } from './Components/profile/profile.component';
+import { ProjectsComponent } from './Components/projects/projects.component';
 import { SettingsComponent } from './Components/settings/settings.component';
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path:"plans",component:PlansComponent},
   {path:"profile",component:ProfileComponent},
   {path:"settings",component:SettingsComponent},
+  {path:"projects",component:ProjectsComponent},
   {path:"**",component:Error404Component}
 ];
 
