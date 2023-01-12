@@ -12,6 +12,7 @@ import { FriendsComponent } from './Components/friends/friends.component';
 import { FilesComponent } from './Components/files/files.component';
 import { PlansComponent } from './Components/plans/plans.component';
 import { Navbar2Component } from './Components/navbar2/navbar2.component';
+import { Error404Component } from './Components/error404/error404.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { Navbar2Component } from './Components/navbar2/navbar2.component';
     FriendsComponent,
     FilesComponent,
     PlansComponent,
-    Navbar2Component
+    Navbar2Component,
+    Error404Component
   ],
   imports: [
     BrowserModule,
