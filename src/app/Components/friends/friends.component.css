@@ -1,0 +1,106 @@
+.content {
+  background-color: var(--mainBackroundColor);
+  padding: 30px 20px;
+  height: 2000px;
+}
+.content .head h1 {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+.content .head .colo {
+  width: 120px;
+  background-color: white;
+  border-radius: 10px;
+}
+.content .head .colo .incolo {
+  width: 35%;
+  background-color: #333;
+  height: 3px;
+  border-radius: 10px;
+}
+.content .friendsContent .item {
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px 15px;
+  width: 32%;
+  margin-bottom: 10px;
+}
+.content .friendsContent .item .conact {
+  text-align: left;
+}
+.content .friendsContent .item .conact i {
+  color: #666;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 50%;
+  margin: 0 2px;
+  transition: 0.3s ease;
+  background-color: rgb(221, 221, 221);
+}
+.content .friendsContent .item .conact i:hover {
+  background-color: var(--blue-alt-color);
+  color: white;
+}
+.content .friendsContent .item .imgfile {
+  margin-bottom: 10px;
+}
+.content .friendsContent .item .imgfile img {
+  transition: 0.4s ease;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.content .friendsContent .item .name {
+  text-align: center;
+  margin-bottom: 4px;
+}
+.content .friendsContent .item .job {
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #999;
+}
+.content .friendsContent .item .author {
+  color: #666;
+  font-size: 13px;
+  text-align: left;
+  padding: 8px 0;
+  border-top: 0.5px solid rgb(214, 214, 214);
+  border-bottom: 0.5px solid rgb(214, 214, 214);
+}
+.content .friendsContent .item .author div {
+  padding: 5px 0;
+  color: #333;
+  font-size: 14px;
+}
+.content .friendsContent .item .author div i {
+  margin-right: 8px;
+  font-size: 13px;
+}
+.content .friendsContent .item .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #666;
+  padding-top: 15px;
+}
+.content .friendsContent .item .info .date {
+  font-size: 12px;
+}
+.content .friendsContent .item .info .button button {
+  margin: 0 3px;
+  font-size: 12px;
+  padding: 6px 8px;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+}
+.content .friendsContent .item .info .button button:nth-of-type(1) {
+  background-color: var(--blue-alt-color);
+}
+.content .friendsContent .item .info .button button:nth-of-type(2) {
+  background-color: var(--red-color);
+}/*# sourceMappingURL=friends.component.css.map */

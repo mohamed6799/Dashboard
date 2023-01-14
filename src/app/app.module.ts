@@ -16,7 +16,8 @@ import { Error404Component } from './Components/error404/error404.component';
 import { ProjectsComponent } from './Components/projects/projects.component';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
-import { FriendsProfileComponent } from './Components/friends-profile/friends-profile.component'
+import { FriendsProfileComponent } from './Components/friends-profile/friends-profile.component';
+import { CapitPipe } from './Pipes/capit.pipe'
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,8 @@ import { FriendsProfileComponent } from './Components/friends-profile/friends-pr
     Navbar2Component,
     Error404Component,
     ProjectsComponent,
-    FriendsProfileComponent
+    FriendsProfileComponent,
+    CapitPipe
   ],
   imports: [
     BrowserModule,

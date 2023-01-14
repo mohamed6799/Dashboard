@@ -1,10 +1,11 @@
 {
     "Friends":[
         {
-            "img":"imgs/friends-05.jpg",
+            "img":"../../../assets/imgs/friend-01.jpg",
             "name":"ahmed nasser",
             "job":"javascript Developer",
             "level":20,
+            "vip":true,
             "id":1,
             "gender":"male",
             "country":"egypt",
@@ -18,10 +19,11 @@
             "Joined":"02/10/2021"
         },
         {
-            "img":"imgs/friends-04.jpg",
-            "name":"Omar Fathy",
+            "img":"../../../assets/imgs/friend-02.jpg",
+            "name":"omar Fathy",
             "job":"cloud developer",
             "level":12,
+            "vip":false,
             "id":2,
             "gender":"male",
             "country":"morroco",
@@ -35,10 +37,11 @@
             "Joined":"02/08/2020"
         },
         {
-            "img":"imgs/friends-05.jpg",
-            "name":"Omar Ahmed",
+            "img":"../../../assets/imgs/friend-03.jpg",
+            "name":"Omar ahmed",
             "job":"mobile developer",
             "level":18,
+            "vip":false,
             "id":3,
             "gender":"male",
             "country":"egypt",
@@ -52,10 +55,11 @@
             "Joined":"02/06/2020"
         },
         {
-            "img":"imgs/friends-04.jpg",
+            "img":"../../../assets/imgs/friend-04.jpg",
             "name":"shady nabil",
             "job":"Back_End developer",
             "level":16,
+            "vip":false,
             "id":4,
             "gender":"male",
             "country":"egypt",
@@ -69,10 +73,11 @@
             "Joined":"28/06/2020"
         },
         {
-            "img":"imgs/friends-02.jpg",
+            "img":"../../../assets/imgs/friend-05.jpg",
             "name":"mohamed ibrahim",
             "job":"Algorithm developer",
             "level":20,
+            "vip":false,
             "id":5,
             "gender":"male",
             "country":"egypt",
@@ -86,10 +91,11 @@
             "Joined":"28/08/2020"
         },
         {
-            "img":"imgs/friends-01.jpg",
-            "name":"Amr Hendawy",
+            "img":"../../../assets/imgs/friend-04.jpg",
+            "name":"AMR HENDAWY",
             "job":"Back_End developer",
             "level":15,
+            "vip":false,
             "id":6,
             "gender":"male",
             "country":"egypt",
@@ -103,10 +109,11 @@
             "Joined":"28/06/2020"
         },
         {
-            "img":"imgs/friends-03.jpg",
+            "img":"../../../assets/imgs/friend-02.jpg",
             "name":"mahmoud adel",
             "job":"cloud developer",
             "level":19,
+            "vip":false,
             "id":7,
             "gender":"male",
             "country":"egypt",
@@ -120,10 +127,11 @@
             "Joined":"02/08/2020"
         },
         {
-            "img":"imgs/friends-01.jpg",
+            "img":"../../../assets/imgs/friend-05.jpg",
             "name":"ahmed abuzaid",
             "job":"content creator",
             "level":11,
+            "vip":true,
             "id":8,
             "gender":"male",
             "country":"egypt",
@@ -136,10 +144,11 @@
             "Joined":"28/12/2020"
         },
         {
-            "img":"imgs/friends-02.jpg",
+            "img":"../../../assets/imgs/friend-01.jpg",
             "name":"Gareeb elshiekh",
             "job":"javascript developer",
             "level":20,
+            "vip":true,
             "id":9,
             "gender":"male",
             "country":"egypt",
@@ -153,10 +162,11 @@
             "Joined":"28/6/2020"
         },
         {
-            "img":"imgs/friends-03.jpg",
+            "img":"../../../assets/imgs/friend-03.jpg",
             "name":"hamze",
             "job":"Front_End developer",
             "level":15,
+            "vip":false,
             "id":10,
             "gender":"male",
             "country":"egypt",
@@ -171,5 +181,425 @@
         }
         
 
+    ],
+    "Files":[
+        {
+            "img":"../../../assets/imgs/pdf.svg",
+            "name":"my-file.pdf",
+            "author":"Elzero",
+            "date":"20/06/2020",
+            "size":"5.5MB"
+        },
+        {
+            "img":"../../../assets/imgs/avi.svg",
+            "name":"my-file.avi",
+            "author":"Admin",
+            "date":"16/05/2021",
+            "size":"12.5MB"
+        },
+        {
+            "img":"../../../assets/imgs/eps.svg",
+            "name":"my-file.eps",
+            "author":"Uploader",
+            "date":"16/05/2021",
+            "size":"2.7MB"
+        },
+        {
+            "img":"../../../assets/imgs/psd.svg",
+            "name":"my-file.psd",
+            "author":"Osama",
+            "date":"16/05/2021",
+            "size":"15.2MB"
+        },
+        {
+            "img":"../../../assets/imgs/dll.svg",
+            "name":"my-file.dll",
+            "author":"Coder",
+            "date":"16/05/2021",
+            "size":"2.2MB"
+        },
+        {
+            "img":"../../../assets/imgs/png.svg",
+            "name":"my-file.png",
+            "author":"Designer",
+            "date":"16/05/2021",
+            "size":" 1.1MB"
+        },
+        {
+            "img":"../../../assets/imgs/dll.svg",
+            "name":"my-file.dll",
+            "author":"Coder",
+            "date":"16/05/2021",
+            "size":"2.2MB"
+        },
+        {
+            "img":"../../../assets/imgs/png.svg",
+            "name":"my-file.png",
+            "author":"Designer",
+            "date":"16/05/2021",
+            "size":" 1.1MB"
+        },
+        {
+            "img":"../../../assets/imgs/psd.svg",
+            "name":"my-file.psd",
+            "author":"Osama",
+            "date":"16/05/2021",
+            "size":"15.1MB"
+        },
+        {
+            "img":"../../../assets/imgs/psf.svg",
+            "name":"my-file.psf",
+            "author":"Elzero",
+            "date":"16/05/2021",
+            "size":"5.5MB"
+        },
+        {
+            "img":"../../../assets/imgs/avi.svg",
+            "name":"my-file.avi",
+            "author":"Admin",
+            "date":"16/05/2021",
+            "size":"12.5MB"
+        },
+        {
+            "img":"../../../assets/imgs/eps.svg",
+            "name":"my-file.eps",
+            "author":"Uploader",
+            "date":"16/05/2021",
+            "size":"2.7MB"
+        },
+        {
+            "img":"../../../assets/imgs/pdf.svg",
+            "name":"my-file.pdf",
+            "author":"Elzero",
+            "date":"16/05/2021",
+            "size":"5.5MB"
+        },
+        {
+            "img":"../../../assets/imgs/avi.svg",
+            "name":"my-file.avi",
+            "author":"Admin",
+            "date":"16/05/2021",
+            "size":"12.5MB"
+        },
+        {
+            "img":"../../../assets/imgs/eps.svg",
+            "name":"my-file.eps",
+            "author":"Uploader",
+            "date":"16/05/2021",
+            "size":"2.7MB"
+        },
+        {
+            "img":"../../../assets/imgs/psd.svg",
+            "name":"my-file.psd",
+            "author":"Osama",
+            "date":"16/05/2021",
+            "size":"15.1MB"
+        },
+        {
+            "img":"../../../assets/imgs/dll.svg",
+            "name":"my-file.dll",
+            "author":"Coder",
+            "date":"16/05/2021",
+            "size":"2.2MB"
+        },
+        {
+            "img":"../../../assets/imgs/png.svg",
+            "name":"my-file.png",
+            "author":"Designer",
+            "date":"16/05/2021",
+            "size":"1.1MB"
+        },
+        {
+            "img":"../../../assets/imgs/dll.svg",
+            "name":"my-file.dll",
+            "author":"Coder",
+            "date":"16/05/2021",
+            "size":"2.2MB"
+        },
+        {
+            "img":"../../../assets/imgs/png.svg",
+            "name":"my-file.png",
+            "author":"Designer",
+            "date":"16/05/2021",
+            "size":"1.1MB"
+        },
+        {
+            "img":"../../../assets/imgs/psd.svg",
+            "name":"my-file.psd",
+            "author":"Osama",
+            "date":"16/05/2021",
+            "size":"15.1MB"
+        },
+        {
+            "img":"../../../assets/imgs/avi.svg",
+            "name":"my-file.avi",
+            "author":"Admin",
+            "date":"16/05/2021",
+            "size":"12.5MB"
+        },
+        {
+            "img":"../../../assets/imgs/dll.svg",
+            "name":"my-file.dll",
+            "author":"Coder",
+            "date":"16/05/2021",
+            "size":"2.2MB"
+        },
+        {
+            "img":"../../../assets/imgs/eps.svg",
+            "name":"my-file.eps",
+            "author":"Uploader",
+            "date":"16/05/2021",
+            "size":"2.7MB"
+        }
+    ],
+    "Projects":[
+        {
+            "header":"Elzero Dashboard",
+            "date":"15/10/2021",
+            "des":"Elzero Dashboard Project Design And Programming And Hosting",
+            "img":[
+                "../../../assets/imgs/team-01.png",
+                "../../../assets/imgs/team-02.png",
+                "../../../assets/imgs/team-03.png",
+                "../../../assets/imgs/team-04.png",
+                "../../../assets/imgs/team-05.png"
+            ],
+            "work":["programming","design","hosting","marketing"],
+            "salary":2500
+        },
+        {
+            "header":"Academy portal",
+            "date":"15/06/2022",
+            "des":"Academy Portal Project Design And Programming",
+            "img":[
+                "../../../assets/imgs/team-01.png",
+                "../../../assets/imgs/team-02.png",
+                "../../../assets/imgs/team-03.png"
+            ],
+            "work":["programming","design"],
+            "salary":1800
+        },
+
+        {
+            "header":"Chatting Application",
+            "date":"15/06/2021",
+            "des":"Chatting Application Project Design",
+            "img":[
+                "../../../assets/imgs/team-01.png",
+                "../../../assets/imgs/team-02.png",
+                "../../../assets/imgs/team-03.png"
+            ],
+            "work":["design"],
+            "salary":950
+        },
+        {
+            "header":"Ahmed Dashboard",
+            "date":"15/06/2022",
+            "des":"Ahmed Dashboard Project Design And Programming And Hosting",
+            "img":[
+                "../../../assets/imgs/team-01.png",
+                "../../../assets/imgs/team-02.png",
+                "../../../assets/imgs/team-03.png",
+                "../../../assets/imgs/team-04.png"
+            ],
+            "work":["programming","design","Hosting","Marketing"],
+            "salary":1700
+        },
+        {
+            "header":"Ahmed Portal",
+            "date":"15/06/2022",
+            "des":"Ahmed Portal Project Design And Programming",
+            "img":[
+                "../../../assets/imgs/team-01.png",
+                "../../../assets/imgs/team-02.png",
+                "../../../assets/imgs/team-03.png"
+            ],
+            "work":["programming","design"],
+            "salary":850
+        },
+        {
+            "header":"Mohamed Application",
+            "date":"15/06/2022",
+            "des":"Mohamed Application Project Design",
+            "img":[
+                "../../../assets/imgs/team-01.png",
+                "../../../assets/imgs/team-02.png",
+                "../../../assets/imgs/team-03.png"
+            ],
+            "work":["design"],
+            "salary":950
+        },
+        {
+            "header":"Mohamed Dashboard",
+            "date":"15/06/2022",
+            "des":"Mohamed Dashboard Project Design And Programming And Hosting",
+            "img":[
+                "../../../assets/imgs/team-01.png",
+                "../../../assets/imgs/team-02.png",
+                "../../../assets/imgs/team-03.png",
+                "../../../assets/imgs/team-04.png"
+            ],
+            "work":["programming","design","Hosting","Marketing"],
+            "salary":1950
+        },
+        {
+            "header":"Mohamed Portal",
+            "date":"15/06/2022",
+            "des":"Mohamed Portal Project Desing And Programming",
+            "img":[
+                "../../../assets/imgs/team-01.png",
+                "../../../assets/imgs/team-02.png",
+                "../../../assets/imgs/team-03.png"
+            ],
+            "work":["programming","design"],
+            "salary":1650
+        },
+        {
+            "header":"Ahmed Application",
+            "date":"15/06/2022",
+            "des":"Ahmed Applicatoin Project Design ",
+            "img":[
+                "../../../assets/imgs/team-01.png",
+                "../../../assets/imgs/team-02.png",
+                "../../../assets/imgs/team-03.png"
+            ],
+            "work":["design"],
+            "salary":950
+        }
+        
+
+
+    
+    ],
+    "Courses":[
+        {
+            "img":"../../../assets/imgs/team-01.png",
+            "background":"../../../assets/imgs/course-01.jpg",
+            "head":"Mastering Web Design",
+            "des":"Master The Art Of Web Designing And Mocking, Prototyping And Creating Web Design Architecture",
+            "person":950,
+            "salary":165
+        },
+        {
+            "img":"../../../assets/imgs/team-02.png",
+            "background":"../../../assets/imgs/course-02.jpg",
+            "head":"Data Structure And Algorithms",
+            "des":"Master The Art Of Data Strcuture And Famous Algorithms Like Sorting, Dividing And Conquering",
+            "person":1150,
+            "salary":210
+        },
+        {
+            "img":"../../../assets/imgs/team-01.png",
+            "background":"../../../assets/imgs/course-03.jpg",
+            "head":"Responsive Web Design",
+            "des":"Mastering Responsive Web Design And Media Queries And Know Everything About Breakpoints",
+            "person":650,
+            "salary":90
+        },
+        {
+            "img":"../../../assets/imgs/team-03.png",
+            "background":"../../../assets/imgs/course-04.jpg",
+            "head":"Mastering Python",
+            "des":"Mastering Python To Prepare For Data Science And AI And Automating Things in Your Life",
+            "person":950,
+            "salary":250
+        },
+        {
+            "img":"../../../assets/imgs/team-03.png",
+            "background":"../../../assets/imgs/course-05.jpg",
+            "head":"PHP Example",
+            "des":"PHP Tutorials And Examples And Practice On Web Application And Connecting With Databases",
+            "person":850,
+            "salary":150
+        },
+        {
+            "img":"../../../assets/imgs/team-02.png",
+            "background":"../../../assets/imgs/course-02.jpg",
+            "head":"Data Structure And Algorithms",
+            "des":"Master The Art Of Data Strcuture And Famous Algorithms Like Sorting, Dividing And Conquering",
+            "person":1150,
+            "salary":210
+        },
+        {
+            "img":"../../../assets/imgs/team-01.png",
+            "background":"../../../assets/imgs/course-03.jpg",
+            "head":"Responsive Web Design",
+            "des":"Mastering Responsive Web Design And Media Queries And Know Everything About Breakpoints",
+            "person":650,
+            "salary":90
+        },
+        {
+            "img":"../../../assets/imgs/team-01.png",
+            "background":"../../../assets/imgs/course-01.jpg",
+            "head":"Mastering Web Design",
+            "des":"Master The Art Of Web Designing And Mocking, Prototyping And Creating Web Design Architecture",
+            "person":850,
+            "salary":145
+        },
+        {
+            "img":"../../../assets/imgs/team-03.png",
+            "background":"../../../assets/imgs/course-05.jpg",
+            "head":"PHP Example",
+            "des":"PHP Tutorials And Examples And Practice On Web Application And Connecting With Databases",
+            "person":850,
+            "salary":150
+        },
+        {
+            "img":"../../../assets/imgs/team-03.png",
+            "background":"../../../assets/imgs/course-04.jpg",
+            "head":"Mastering Python",
+            "des":"Mastering Python To Prepare For Data Science And AI And Automating Things in Your Life",
+            "person":950,
+            "salary":250
+        }
+
+    ],
+    "Plans":[
+        {
+            "name":"Free",
+            "salary":0.00,
+            "content":[
+                ["Access All Text Lessons", true],
+                ["Access All Videos Lessons", true],
+                ["Appear On Leaderboard", true],
+                ["Browse Content Without Ads", false],
+                ["Access All Assignments" , false],
+                ["Get Daily Prizes", false],
+                ["Earn Certificate", false],
+                ["1 GB Space For Hosting Files", false],
+                ["Access Badge System", false]
+            ]
+        },
+        {
+            "name":"Basic",
+            "salary":7.99,
+            "content":[
+                ["Access All Text Lessons", true],
+                ["Access All Videos Lessons", true],
+                ["Appear On Leaderboard", true],
+                ["Browse Content Without Ads", true],
+                ["Access All Assignments" , true],
+                ["Get Daily Prizes", true],
+                ["Earn Certificate", true],
+                ["1 GB Space For Hosting Files", false],
+                ["Access Badge System", false]
+            ]
+        },
+        {
+            "name":"Premium",
+            "salary":19.99,
+            "content":[
+                ["Access All Text Lessons", true],
+                ["Access All Videos Lessons", true],
+                ["Appear On Leaderboard", true],
+                ["Browse Content Without Ads", true],
+                ["Access All Assignments" , true],
+                ["Get Daily Prizes", true],
+                ["Earn Certificate", true],
+                ["1 GB Space For Hosting Files", true],
+                ["Access Badge System", true]
+            ]
+        }
     ]
+
 }

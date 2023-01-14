@@ -1,4 +1,213 @@
+
 .content{
     background-color: var(--mainBackroundColor);
-    height: 3000px;
+    padding:30px 20px;
+    .head{
+        
+        h1{
+            font-size: 30px;
+            font-weight: 600;
+            letter-spacing: 5px;
+            margin-bottom:10px ;
+        }
+        .colo{
+                width:120px;
+                background-color: white;
+                border-radius: 10px;
+            .incolo{
+                width: 35%;
+                background-color: #333;
+                height: 3px;
+                border-radius: 10px;
+            }
+        }
+    }
+    .friendsContent{
+        margin-top: 40px;
+        .friends{
+            display: grid ;
+            grid-template-columns: 32% 32% 32%;
+            justify-content: space-between;
+            align-content: space-between;
+    
+            .item{
+                background-color: white;
+                border-radius: 10px;
+                width: 100%;
+                margin-bottom: 15px;
+                text-align: center;
+                padding: 10px 15px;
+                .conact{
+                    text-align: left;
+                    i{
+                        color:#666;
+                        padding: 10px ;
+                        font-size: 14px;
+                        border-radius: 50%;
+                        margin: 0 2px;
+                        transition:0.3s ease;
+                        background-color: rgb(221, 221, 221);
+                        &:hover{
+                            background-color: var(--blue-alt-color);
+                            color:white;
+                        }
+                    }
+                }
+                .imgfile{
+                    margin-bottom: 10px;
+                    img{
+                        transition: 0.4s ease;
+                        width: 100px;
+                        height: 100px;
+                        border-radius:50% ;
+                    }
+                }
+                .name{
+                    text-align: center;
+                    margin-bottom: 4px;
+                }
+                .job{
+                    font-size: 12px;
+                    text-align: center;
+                    margin-bottom: 15px;
+                    color: #999;
+                }
+                .author{
+                    color:#666;
+                    font-size: 13px;
+                    display:flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    text-align: left;
+                    padding:  8px 0 ;
+                    border-top: 0.5px solid rgb(214, 214, 214);
+                    border-bottom: 0.5px solid rgb(214,214,214);
+                    .one{
+                        div{
+                            padding: 5px 0;
+                            color: #333;
+                            font-size: 14px;
+                            i{
+                                margin-right: 8px;
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                    h1{
+                        font-size: 35px;
+                        color:#fdecce;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    }
+                    
+                }
+                
+                .info{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: #666;
+                    padding-top: 15px;
+                    .date{
+                        font-size: 12px;
+                    }
+                    .button{
+                        button{
+                            margin: 0 3px;
+                            font-size: 12px;
+                            padding: 6px 8px ;
+                            border: 0;
+                            border-radius: 5px;
+                            color: white;
+                            &:nth-of-type(1){
+                                background-color: var(--blue-alt-color);
+                            }
+                            &:nth-of-type(2){
+                                background-color: var(--red-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media  screen and (max-width:1100px) {
+    .content{
+        padding: 20px 10px ;
+        .friends{
+            grid-template-columns: 49% 49% !important;
+            .item{
+                .info{
+                    .button{
+                        button{
+                            display: block ;
+                            margin:  0 !important;
+                            padding: 10px 50px !important;
+                            width: 100% !important;
+
+                            &:nth-of-type(1){
+                                margin-bottom: 5px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media  screen and (max-width : 650px) {
+    .content{
+        padding: 20px 5px !important;
+        .friends{
+            grid-template-columns: 100% !important;
+            .item{
+               
+                .info{
+                    .button{
+                        button{
+                            display: block;
+                            margin:  0 !important;
+                            padding: 10px 50px !important;
+                            width: 100%;
+                            &:nth-of-type(1){
+                                margin-bottom: 10px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media  screen and (max-width : 400px) {
+    .friends{
+        .item{
+            .conact{
+                text-align: center !important;
+                margin-bottom: 10px;
+                i{
+                    margin:0 5px !important;
+                    padding:15px !important;
+                }
+            }
+            .info{
+                display: block !important;
+                .date{
+                    display: block;
+                    
+                    margin-bottom: 15px;
+                }
+                .button{
+                    button{
+                        height: 35px;
+                        margin: 0 !important;
+                        font-size: 16px !important;
+                    }
+                    
+                }
+            }
+        }
+    }
 }

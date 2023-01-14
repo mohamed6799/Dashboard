@@ -1,1 +1,36 @@
-<div class="content"></div>
+<div class="content">
+        <div class="head">
+            <h1>Friends</h1>
+            <div class="colo">
+                <div class="incolo"></div>
+            </div>
+        </div>
+        <div class="friendsContent">
+            <div class="friends">
+                <div class="item" *ngFor="let Friend of Friends">
+                    <div class="conact" ><i class="fa-solid fa-phone"></i> <i class="fa-regular fa-envelope"></i></div>
+                    <div class="imgfile" ><img [src]="Friend.img"  alt="file"></div>
+                    <div class="name">{{Friend.name|capit}}</div>
+                    <div class="job">{{Friend.job}}</div>
+                    <div class="author">
+                        <div class="one">
+                            <div><i class="fa-regular fa-face-smile"></i>{{Friend.friends}} Friends</div>
+                            <div><i class="fa-solid fa-code-commit fa-fw"></i>{{Friend.projects}} Projects</div>
+                            <div><i class="fa-regular fa-newspaper"></i>{{Friend.articles}} articles</div>
+                        </div>
+                        <h1 *ngIf="Friend.vip">
+                            VIP
+                        </h1>
+                    </div>
+                    <div class="info">
+                        <div class="date">Joined {{Friend.Joined}}</div>
+                        <div class="button">
+                            <button>Profile</button>
+                            <button>Remove</button>
+                        </div>
+                    </div>
+                </div>
+                 
+            </div>
+        </div>
+</div>
