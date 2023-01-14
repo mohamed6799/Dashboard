@@ -1,0 +1,161 @@
+.content{
+    background-color: var(--mainBackroundColor);
+    padding:30px 20px;
+    .head{
+        
+        h1{
+            font-size: 30px;
+            font-weight: 600;
+            letter-spacing: 5px;
+            margin-bottom:10px ;
+        }
+        .colo{
+                width:120px;
+                background-color: white;
+                border-radius: 10px;
+            .incolo{
+                width: 35%;
+                background-color: #333;
+                height: 3px;
+                border-radius: 10px;
+            }
+        }
+    }
+    .PlansContent{
+        margin-top: 40px;
+        .Plans{
+            display: grid;
+            grid-template-columns: 49% 49%;
+            justify-content: space-between;
+            .item{
+                margin: 10px;    
+                padding: 20px  23px;
+                background-color: white;
+                text-align: center;
+                .green{
+                    background-color: var(--green-color);
+                    border: 5px solid white;
+                    outline: 5px solid var(--green-color);
+                }
+                .blue{
+                    background-color: var(--blue-alt-color);
+                    border: 5px solid white;
+                    outline: 5px solid var(--blue-alt-color);
+                }
+                .orange{
+                    background-color: var(--orange-color);
+                    border: 5px solid white;
+                    outline: 5px solid var(--orange-color);
+                }
+                .header{
+                    border: 1px solid #333;
+                    border: 5px solid white;
+                    padding: 20px 0;
+                    color: white;
+                    }
+                    span{
+                        display: block;
+                        line-height: 40px;
+                        font-weight: bold;
+                        font-size: 23px;
+                        &:nth-of-type(2){
+                            font-size: 37px;
+                            font-weight: 300;
+                        }
+                    }
+                }
+                ul{
+                    margin: 20px 0;
+                    .red{
+                        color:red;
+                    }
+                    .greenI{
+                        color:var(--green-color)
+                    }
+                    li{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 12px 0;
+                        border-bottom: 0.5px solid rgb(214, 214, 214);
+                        .i{
+                            background-color: #999;
+                            width: 20px;
+                            line-height: 20px;
+                            height: 20px;
+                            text-align: center;
+                            vertical-align: top;
+                            font-size: 12px;
+                            border-radius: 50%;
+                            color: white;
+                            cursor: pointer;
+                        }
+                        i{
+                            width: 20px;
+                            margin-right:5px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+                button{
+                    width: 25%;
+                    font-size: 16px;
+                    padding: 5px 0;
+                    border:none;
+                    color:white;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+                .buttonClassOrange{background-color: var(--orange-color);}
+                .buttonClassGreen{background-color: var(--green-color);}
+                .buttonClassBlue{background-color: var(--blue-color);}
+                .Current_Plan{
+                    color: #999;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+@media  screen and (max-width: 800px) {
+    .Plans{
+        grid-template-columns: 100% !important;
+    }
+}
+@media screen and (max-width : 450px) {
+    .content{
+        padding: 20px 10px !important;
+        .Plans{
+            .item{
+                width: 100% !important;
+                margin: 0 !important;
+                padding: 10px !important;
+                ul{
+                    li{
+                        justify-content: space-between !important;
+                        align-items: center !important;
+                        padding-right: 0 !important;
+                        .it{
+                            font-size: 12px;
+                            margin: 0 !important;
+                            padding: 0 !important;
+                            text-align: left;
+                            i{
+                                font-size: 10px !important;
+                                margin: 0 !important;
+                                width: 15px !important;
+                                height: 15px !important;
+                            }
+                        }
+                        .i{
+                            width: 15px !important;
+                            line-height: 15px !important;
+                            font-size: 10px !important;
+                            height: 15px !important;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

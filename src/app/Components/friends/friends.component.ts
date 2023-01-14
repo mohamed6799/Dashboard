@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component , OnInit} from '@angular/core';
 import { DataService } from 'src/app/Services/data.service';
 
 @Component({
@@ -6,7 +6,7 @@ import { DataService } from 'src/app/Services/data.service';
   templateUrl: './friends.component.html',
   styleUrls: ['./friends.component.scss']
 })
-export class FriendsComponent {
+export class FriendsComponent implements OnInit{
 
   Friends:any;
   

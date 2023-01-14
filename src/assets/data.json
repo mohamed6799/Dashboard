@@ -558,6 +558,9 @@
         {
             "name":"Free",
             "salary":0.00,
+            "class":"green",
+            "buttonClass":"buttonClassGreen",
+            "button":true,
             "content":[
                 ["Access All Text Lessons", true],
                 ["Access All Videos Lessons", true],
@@ -573,6 +576,9 @@
         {
             "name":"Basic",
             "salary":7.99,
+            "class":"blue",
+            "buttonClass":"buttonClassBlue",
+            "button":true,
             "content":[
                 ["Access All Text Lessons", true],
                 ["Access All Videos Lessons", true],
@@ -588,6 +594,9 @@
         {
             "name":"Premium",
             "salary":19.99,
+            "class":"orange",
+            "buttonClass":"buttonClassOrange",
+            "button":false,
             "content":[
                 ["Access All Text Lessons", true],
                 ["Access All Videos Lessons", true],

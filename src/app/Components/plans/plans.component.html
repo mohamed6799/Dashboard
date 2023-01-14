@@ -1,1 +1,34 @@
-<p>plans works!</p>
+<div class="content">
+    <div class="head">
+        <h1>Plans</h1>
+        <div class="colo">
+            <div class="incolo"></div>
+        </div>
+    </div>
+    <div class="PlansContent">
+        <div class="Plans">
+            <div class="item" *ngFor="let plan of Plans">
+                <div class="header" [ngClass]="plan.class">
+                    <span>{{plan.name}}</span>
+                    <span><sup><i class="fa-solid fa-dollar-sign"></i></sup>{{plan.salary|number:'1.2'}}</span>
+                </div>
+                <ul>
+                    <li *ngFor="let i of plan.content">
+                        <div class="it">
+                            <i [ngClass]="i[1] ? 'fa-solid fa-check greenI':'fa-solid fa-xmark red' "></i>
+                            {{i[0]}}
+                        </div>
+                        <span class="i">i</span>
+                    </li>
+                </ul>
+                <div class="button">
+                    <button *ngIf="plan.button else p" [class]="plan.buttonClass">Join</button>
+                    <ng-template #p>
+                        <p class="Current_Plan">This Is Your Current Plan</p>
+                    </ng-template>  
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
