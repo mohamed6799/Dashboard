@@ -1,0 +1,151 @@
+.content{
+    background-color: var(--mainBackroundColor);
+    padding: 30px 20px;
+    .head{
+        h1{
+            font-size: 30px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            }
+        .colo{
+            width: 120px;
+            background-color: white;
+            border-radius: 10px;
+            .incolo{
+                width: 35%;
+                background-color: #333;
+                height: 3px;
+                border-radius: 10px;
+            }
+        }
+    }
+    .CoursesContent{
+        margin-top: 40px;
+        .Courses{
+            display: grid;
+            grid-template-columns: 32% 32% 32%;
+            justify-content: space-between;
+            .item{
+                margin-bottom: 20px;
+                background-color: white;
+                border-radius: 5px;
+                .img{
+                    position: relative;
+                    margin-bottom: 10px;
+                    img{
+                        border-radius: 10px 10px 0 0;
+                        width: 100%;
+                        height: auto;
+                        &:nth-of-type(1){
+                            position: absolute;
+                            left: 20px;
+                            top: 20px;
+                            width: 60px;
+                            height: 60px;
+                            border: 2px solid white;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+                .itemContent{
+                    padding: 15px 20px;
+                    h1{
+                        font-size: 17px;
+                        color: #333;
+                        margin-bottom: 12px;
+                    }
+                    p{
+                        font-size: 14px;
+                        color: var(--grey-color);
+                        margin-bottom: 12px;
+                        line-height: 1.5;
+                    }
+                    
+                }
+                .info{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    position: relative;
+                    padding: 15px ;
+                    border-top: 0.5px solid rgb(210, 210, 210);
+                    span{
+                        color: var(--grey-color);
+                        &:nth-of-type(2){
+                            position:absolute;
+                            padding: 5px 10px;
+                            background-color: var(--blue-alt-color);
+                            border-radius:10px ;
+                            color: white;
+                            font-size: 14px;
+                            top: 0;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .content{
+        .CoursesContent{
+            .Courses{
+                grid-template-columns: 49% 49%;
+                
+            }
+        }
+    }
+}
+@media screen and (max-width:770px) {
+    .content{
+        .CoursesContent{
+            .Courses{
+                grid-template-columns: 100%;
+                
+            }
+        }
+    }
+}
+@media screen and (max-width:350px) {
+    .content{
+        padding: 20px 10px;
+        .CoursesContent{
+            .Courses{
+                .item{
+                    .img{
+                        img{
+                            &:nth-of-type(1){
+                                width: 40px;
+                                height: 40px;
+                                left: 8px;
+                                top: 8px;
+                            }
+                        }
+                    }
+                .itemContent{
+                    padding: 10px ;
+                    h1{
+                        font-size: 12px;
+                    }
+                    p{
+                        font-size: 10px;
+                    }
+                }
+                .info{
+                    padding: 10px;
+                    span{
+                        &:nth-of-type(2){
+                            font-size: 10px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+}

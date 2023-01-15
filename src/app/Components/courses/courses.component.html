@@ -1,1 +1,27 @@
-<p>courses works!</p>
+<div class="content">
+    <div class="head">
+        <h1>Courses</h1>
+        <div class="colo">
+            <div class="incolo"></div>
+        </div>
+    </div>
+    <div class="CoursesContent">
+        <div class="Courses">
+            <div class="item" *ngFor="let Course of Courses">
+                <div class="img">
+                    <img [src]="Course.img" alt="">
+                    <img [src]="Course.background" alt="">
+                </div>
+                <div class="itemContent">
+                    <h1>{{Course.head}}</h1>
+                    <p>{{Course.des}}</p>
+                </div>
+                <div class="info">
+                    <span><i class="fa-regular fa-user"></i> {{Course.person}}</span>
+                    <span>Course Info</span>
+                    <span><i class="fa-solid fa-dollar-sign"></i> {{Course.salary}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

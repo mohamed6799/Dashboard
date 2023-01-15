@@ -182,32 +182,36 @@
 }
 
 @media  screen and (max-width : 400px) {
-    .friends{
-        .item{
-            .conact{
-                text-align: center !important;
-                margin-bottom: 10px;
-                i{
-                    margin:0 5px !important;
-                    padding:15px !important;
-                }
-            }
-            .info{
-                display: block !important;
-                .date{
-                    display: block;
-                    
-                    margin-bottom: 15px;
-                }
-                .button{
-                    button{
-                        height: 35px;
-                        margin: 0 !important;
-                        font-size: 16px !important;
+    .content{
+        padding: 20px 10px !important;
+        .friends{
+            .item{
+                .conact{
+                    text-align: center !important;
+                    margin-bottom: 10px;
+                    i{
+                        margin:0 5px !important;
+                        padding:15px !important;
                     }
-                    
+                }
+                .info{
+                    display: block !important;
+                    .date{
+                        display: block;
+                        
+                        margin-bottom: 15px;
+                    }
+                    .button{
+                        button{
+                            height: 35px;
+                            margin: 0 !important;
+                            font-size: 16px !important;
+                        }
+                        
+                    }
                 }
             }
         }
     }
+    
 }
