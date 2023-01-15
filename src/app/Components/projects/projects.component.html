@@ -1,1 +1,34 @@
-<p>projects works!</p>
+<div class="content">
+    <div class="head">
+        <h1>Projects</h1>
+        <div class="colo">
+            <div class="incolo"></div>
+        </div>
+    </div>
+    <div class="ProjectsContent">
+        <div class="Projects">
+            <div class="item" *ngFor="let Project of Projects">
+                <div class="date">{{Project.date}}</div>
+                <h1 class="name">{{Project.header}}</h1>
+                <p class="des">{{Project.des}}</p>
+                <div class="img" >
+                    <img *ngFor="let img of Project.img" [src]="img" alt="">
+                </div>
+                <ul >
+                    <li *ngFor="let work of Project.work"><span>{{work}}</span></li>
+                </ul>
+                <div class="footerContent">
+                    <div class="range">
+                        <div class="contentRange" [ngStyle]=" {
+                            'width.%':Project.salary*100/3000,
+                            'background-color' : Project.salary*100/3000 > 40 && Project.salary*100/3000 < 60?
+                            'var(--blue-alt-color)' :Project.salary*100/3000 > 60 ?
+                            'var(--green-color)':'var(--red-color)'
+                        }" ></div>
+                    </div>
+                    <div class="salary"><i class="fa-solid fa-dollar-sign" style="margin-right: 3px;"></i>{{Project.salary}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

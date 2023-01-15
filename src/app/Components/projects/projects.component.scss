@@ -1,0 +1,156 @@
+.content{
+    background-color: var(--mainBackroundColor);
+    padding: 30px 20px;
+    .head{
+        
+        h1{
+            font-size: 30px;
+            font-weight: 600;
+            letter-spacing: 5px;
+            margin-bottom:10px ;
+        }
+        .colo{
+                width:120px;
+                background-color: white;
+                border-radius: 10px;
+            .incolo{
+                width: 35%;
+                background-color: #333;
+                height: 3px;
+                border-radius: 10px;
+            }
+        }
+    }
+    .ProjectsContent{
+        margin-top: 40px;
+        
+        .Projects{
+            display: grid;
+            grid-template-columns: 49% 49%;
+            justify-content: space-between;
+            
+            .item{
+                margin-bottom: 20px;
+                background-color: white;
+                border-radius: 10px;
+                padding: 15px 10px;
+                .date{
+                    text-align: right;
+                    color: #999;
+                }
+                .name{
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                    font-size: 17px;
+                }
+                .des{
+                    font-size: 15px;
+                    color:#999;
+                }
+                .img{
+                    margin-top: 35px;
+                    margin-bottom: 20px;
+                    position: relative;
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        margin-right: -10px;
+                        display: inline;
+                        border-radius: 50%;
+                        transition: 0.2s ease;
+                        &:hover{
+                            transform:scale(1.2,1.2);
+                            
+                            
+                        }
+                    }
+
+                }
+                ul{
+                    border-bottom: 0.5px solid rgb(240, 240, 240);
+                    border-top: 0.5px solid rgb(240, 240, 240);
+                    padding: 10px 0;
+                    text-align: right;
+                    li{
+                        display: inline-block;
+                        margin:0 5px;
+                        padding: 5px 0;
+                        margin-bottom: 8px;
+                        span{
+                            background-color: rgb(240, 240, 240);
+                            padding:5px 8px;
+                            border-radius: 5px;
+                            font-size: 13px;
+                            
+                        }
+                    }
+                }
+                .footerContent{
+                    text-align: center;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 15px 0;
+                    .range{
+                        background-color: var(--headBackgroundColor);
+                        height: 8px;
+                        width: 50%;
+                        border-radius: 10px;
+                        .contentRange{
+                            height: 8px;
+                            border-radius: 10px;
+                            background-color: var(--green-color);
+                        }
+                    }
+                    .salary{
+                        color: #777;
+                    }
+
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:950px) {
+    .content{
+        .ProjectsContent{
+           .Projects{
+            grid-template-columns: 100% !important;
+            .item{
+                ul{
+                    text-align: left;
+                    li{
+                        display: block !important;
+                    }
+                }
+            }
+            } 
+        }
+        
+    }
+}
+@media screen and (max-width:400px) {
+    .content{
+        padding:20px 5px;
+        .ProjectsContent{
+            .Projects{
+                .item{
+                    padding: 10px ;
+                    .date{
+                        margin-bottom: 10px;
+                    }
+                    .footerContent{
+                        display: block;
+                        .range{
+                            
+                            width: 100%;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
