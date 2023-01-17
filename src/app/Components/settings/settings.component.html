@@ -1,1 +1,222 @@
-<p>settings works!</p>
+<div class="content">
+    <div class="head">
+        <h1>Settings</h1>
+        <div class="colo">
+            <div class="incolo"></div>
+        </div>
+    </div>
+    <div class="ProfileContent">
+        <div class="item">
+            <h1>Site Control</h1>
+            <p class="p1">Control The Website If There Is Maintenance</p>
+            <div class="contentItem">
+                <div class="openClose">
+                    <div class="one">
+                        <h4>Website Control</h4>
+                        <p class="p2">Open/Close Website And Type The Reason</p>
+                    </div>
+                    <div class="two">
+                        <input id="box" style="display: none;"  type="checkbox" checked>
+                        <label for="box">
+                            <div class="range">
+                                <i class="fa-solid fa-check" style="color:var(--blue-color)"></i>
+                                <i class="fa-solid fa-xmark" style="color:var(--grey-color)"></i>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <textarea placeholder="Close Message Content"  rows="9"></textarea>
+            
+            </div>    
+        </div>
+        <div class="item">
+            <h1>General Info</h1>
+            <p class="p1">General Information About Your Account</p>
+            <div class="contentItem">
+                <form>
+                    <label for="f_name" style="display:block;">First Name : </label>
+                    <input type="text" id="f_name" placeholder="First Name">
+                    <label for="l_name" style="display:block;">Last Name : </label>
+                    <input type="text" id="l_name" placeholder="Last Name">
+                    <label for="email" style="display:block;">Email : </label>
+                    <div class="email">
+                        <input type="email" id="email" disabled placeholder="O@example.com">
+                        <span>Change</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="item">
+            <h1>Security Info</h1>
+            <p class="p1">Security Information About Your Account</p>
+            <div class="contentItem">
+                <div class="password infoItem">
+                    <div class="text">
+                        <h2>Password</h2>
+                        <p>Last change On 25/10/2021</p>
+                    </div>
+                    <button>Change</button>
+                </div>
+                <div class="password infoItem">
+                    <div class="text">
+                        <h2>Two-Factor Authentication</h2>
+                        <p>Enable/Desiable The Feature</p>
+                    </div>
+                    <div class="two">
+                        <input id="box2" style="display:none;"  type="checkbox" checked>
+                        <label for="box2">
+                            <div class="range">
+                                <i class="fa-solid fa-check" style="color:var(--blue-color)"></i>
+                                <i class="fa-solid fa-xmark" style="color:var(--grey-color)"></i>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="device infoItem">
+                    <div class="text">
+                        <h2>Devices</h2>
+                        <p>Check The Login Devices List</p>
+                    </div>
+                    <button style="background-color: rgb(214,214,214);color: #333;">Devices</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="item">
+            <h1>Social Info</h1>
+            <p class="p1">Social Media Information</p>
+            <div class="contentItem">
+                <ul>
+                    <li>
+                        <div class="social">
+                            <i class="fa-brands fa-twitter"></i>
+                        <input type="text" placeholder="Twitter Username">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        <input type="text" placeholder="Facebook Username">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="social">
+                            <i class="fa-brands fa-linkedin"></i>
+                        <input type="text" placeholder="Linkedin Username">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="social">
+                            <i class="fa-brands fa-youtube"></i>
+                        <input type="text" placeholder="Youtube Username">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="item">
+            <h1>Widgets Control</h1>
+            <p class="p1">Show/Hide Widgets</p>
+            <div class="contentItem">
+                <ul>
+                    <li>
+                        <div class="checkItem">
+                            <input type="checkbox" id="qd" checked>
+                            <label for="qd">Quick Draft</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="checkItem">
+                            <input type="checkbox" id="yt" checked>
+                            <label for="yt">Yearly Targets</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="checkItem">
+                            <input type="checkbox" id="ts" checked>
+                            <label for="ts">Tickets Statistics</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="checkItem">
+                            <input type="checkbox" id="ln" checked>
+                            <label for="ln">Latest News</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="checkItem">
+                            <input type="checkbox" id="lt">
+                            <label for="lt">Latest Tasks</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="checkItem">
+                            <input type="checkbox" id="tsi" checked>
+                            <label for="tsi">Top Search Items</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="item">
+            <h1>Backup Manager</h1>
+            <p class="p1">Control Backup Time And Location</p>
+            <div class="contentItem">
+                <ul>
+                    <li>
+                        <div class="radio">
+                            <input type="radio" name="radio1" checked id="one">
+                            <label for="one">Daily</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio">
+                            <input type="radio" name="radio1" id="two">
+                            <label for="two">Weekly</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio">
+                            <input type="radio" name="radio1" id="three">
+                            <label for="three">Monthly</label>
+                        </div>
+                    </li>
+                </ul>
+                <div class="radioItem">
+                    <ul>
+                        <li>
+                            <div class="radio2">
+                                <input type="radio" id="four" checked name="radio2">
+                                <label for="four">
+                                    <i class="fa-solid fa-server"></i>
+                                    <span>Megaman</span>    
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="radio2">
+                                <input type="radio" id="five" name="radio2">
+                                <label for="five">
+                                    <i class="fa-solid fa-server"></i>
+                                    <span>Zero</span>    
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="radio2">
+                                <input type="radio" id="six" name="radio2">
+                                <label for="six">
+                                    <i class="fa-solid fa-server"></i>
+                                    <span>Sigma</span>    
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

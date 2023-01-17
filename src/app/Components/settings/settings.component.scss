@@ -1,0 +1,421 @@
+.content{
+    background-color:var(--mainBackroundColor);
+    padding:30px 20px;
+    .head{
+        h1{
+            font-size: 30px;
+            font-weight: 600;
+            letter-spacing: 5px;
+            margin-bottom: 10px;
+        }
+        .colo{
+            width:120px;
+            background-color:white;
+            border-radius:10px;
+            .incolo{
+                width:35%;
+                background-color:#333;
+                height:3px;
+                border-radius:10px;
+
+            }
+        }
+    }
+    .ProfileContent{
+        margin-top: 40px;
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .item{
+            padding: 25px 20px;
+            border-radius: 10px;
+            width:49%;
+            margin-bottom: 20px;
+            background-color:white;
+            h1{
+                font-size: 24px;
+                margin-bottom: 13px;
+            }
+            .p1{
+                color:var(--grey-color);
+                font-size:15px
+            }
+            .contentItem{
+                margin: 25px 0 0 0;
+                .openClose{
+                    display:flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 20px;
+                }
+                .one{
+                    margin-bottom: 5px;
+                    h4{
+                        font-size:18px;
+                        font-weight: 400;
+                        margin-bottom: 8px;
+                    }
+                    .p2{
+                        font-size:13px;
+                        color:var(--grey-color)
+                    }
+                }
+                .two{
+                    label{
+                        display:block;
+                        width:60px;
+                        height: 28px;
+                        transition:0.3s ease;
+                        position: relative;
+                        background-color:var(--blue-color);
+                        border-radius: 20px;
+                        .range{
+                            position: absolute;
+                            right: 3px;
+                            top: 3px;
+                            transition: 0.5s ease;
+                            width: 20px;
+                            height: 22px;
+                            border-radius: 50%;
+                            background-color: white;
+                            text-align: center;
+                            i{
+                                margin-top: 4px;
+                                &:nth-of-type(2){
+                                    display:none;
+                                }
+                            }
+                        }
+                    }
+                    #box:checked{
+                        &~ label {
+                            background-color:var(--blue-color);
+                            .range{
+                                right:3px;
+                                i{
+                                    margin-top: 4px;
+                                    &:nth-of-type(1){
+                                        display:block;
+                                    }
+                                    &:nth-of-type(2){
+                                        display:none;
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                    #box:not(:checked){
+                        &~ label {
+                            background-color:var(--grey-color);
+                            .range{
+                                right:36px;
+                                i{
+                                    margin-top: 4px;
+                                    &:nth-of-type(1){
+                                        display:none;
+                                    }
+                                    &:nth-of-type(2){
+                                        display:block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                form{
+                    width: 100%;
+                    
+                    label{
+                        font-size: 15px;
+                        color: var(--grey-color);
+                        margin: 0 0 10px 0;
+                    }
+                    input{
+                        margin-bottom: 15px;
+                        width: 100%;
+                        display: block;
+                        padding:  10px ;
+                        font-size: 14px;
+                        color: var(--grey-color);
+                        outline: none;
+                        border :0.3px solid rgb(240, 240, 240);
+                        box-shadow: 0 0 2px var(--grey-color);
+                        border-radius: 5px;
+                        transition:0.5s ease;
+                        &:focus{
+                            border-color:rgb(214, 214, 214) ;
+                            box-shadow: 0 0 10px rgb(214, 214, 214);
+                        }
+                        &[type="email"]{
+                            width: 80%;
+                            display: inline-block;
+                        }  
+                    }
+                    span{
+                        display: inline-block;
+                        width: 20%;
+                        text-align: right;
+                        font-size: 17px;
+                        color: var(--blue-color);
+
+                    }
+                    
+                }
+                textarea{
+                    padding:10px;
+                    font-size: 13px;
+                    resize:none;
+                    width:100%;
+                    border :0.3px solid rgb(240, 240, 240);
+                    border-radius: 5px;
+                    outline: none;
+                    transition:0.2s ease;
+                    &:focus{
+                        border-color:rgb(214, 214, 214) ;
+                        box-shadow: 0 0 5px rgb(214, 214, 214);
+                    }
+                }
+                .infoItem{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 25px 0;
+                    border-bottom: 0.1px solid rgb(214, 214, 214);
+                    h2{
+                        margin-bottom: 8px;
+                        font-size: 17px;
+                        font-weight: 500;
+                    }
+                    p{
+                        font-size: 14px;
+                        color: var(--grey-color);
+                    }
+                    button{
+                        padding: 5px 10px ;
+                        background-color: var(--blue-color);
+                        border-radius: 5px ;
+                        cursor: pointer;
+                        font-size: 18px;
+                        border: none;
+                        color: white;
+                        transition: 0.2s ease;
+                        &:hover{
+                            background-color: var(--blue-alt-color);
+                        }
+                    }
+                    .two{
+                        #box2:checked{
+                            &~ label {
+                                background-color:var(--blue-color);
+                                .range{
+                                    right:3px;
+                                    i{
+                                        margin-top: 4px;
+                                        &:nth-of-type(1){
+                                            display:block;
+                                        }
+                                        &:nth-of-type(2){
+                                            display:none;
+                                        }
+                                    }
+                                }
+                            }  
+                        }
+                        #box2:not(:checked){
+                            &~ label {
+                                background-color:var(--grey-color);
+                                .range{
+                                    right:36px;
+                                    i{
+                                        margin-top: 4px;
+                                        &:nth-of-type(1){
+                                            display:none;
+                                        }
+                                        &:nth-of-type(2){
+                                            display:block;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                ul{
+                    li{
+                        margin-bottom: 17px;
+                        .social{
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            border: 1px solid rgb(214, 214, 214);
+                            border-radius: 5px;
+                            background-color: rgb(240, 240, 240);
+                            i{
+                                border-right: 0.1px solid rgb(214, 214, 214);
+                                font-size: 18px;
+                                width: 50px;
+                                text-align: center;
+                                color: var(--grey-color);
+                                padding: 10px 0;
+                                display: inline-block;
+
+                            }
+                            input{
+                                background-color: rgb(240, 240, 240);
+                                border-radius: 5px;
+                                outline: none;
+                                border: none;
+                                padding:10px;
+                                width: 100%;
+                                display: inline-block;
+                                font-size: 14px;
+                                color: var(--grey-color);
+                            }
+                            
+                        }
+                        .checkItem{
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            input{
+                                display: inline-block;
+                                height: 20px;
+                                width: 20px;
+                                margin-right: 12px;
+                            }
+                            label{
+                                font-size: 17px;
+                            }
+                        }
+                        .radio{
+                            display:flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            input{
+                                width: 20px;
+                                border: 5px solid red;
+                                border-radius: 50%;
+                                height: 20px;
+                                margin-right: 10px;
+                            }
+                            label{
+                                font-size: 18px;
+                            }
+                        }
+
+                        
+                    }
+                }
+                .radioItem{
+                    margin-top: 20px;
+                    border-top: 1px solid rgb(240, 240, 240);
+                    padding:25px 0;
+                    ul{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        li{
+                            width: 32%;
+                            margin-bottom: 0;
+                            .radio2{
+                                display: flex;
+                                input[type="radio"]{
+                                    display: none;
+                                    &:checked~ label{
+                                        border: 2px solid var(--blue-color);
+                                        color: var(--blue-color);
+                                    }
+                                }
+                                label{
+                                    text-align: center;
+                                    width: 100%;
+                                    padding:17px 0;
+                                    border: 1px solid rgb(214, 214, 214);
+                                    border-radius: 10px;
+                                    i {
+                                        display: block;
+                                       padding-bottom: 12px;
+                                       font-size: 18px;
+                                    }
+                                    span{
+                                        display: block;
+                                        font-size: 17px;
+                                    }
+
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .content{
+        .ProfileContent{
+            .item{
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width:450px) {
+    .content{
+        padding: 20px 10px;
+        .ProfileContent{
+            .item{
+                padding-left:10px;
+                padding-right: 10px;
+                h1{
+                    font-size: 22px;
+                }
+                .contentItem{
+                    form{
+                        input[type="email"]{
+                            display: block;
+                            width: 100%;
+                        }
+                        span{
+                            display: block;
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
+                    .openClose{
+                        display:block;
+                        .two{
+                            margin-top: 10px;
+                        }
+                    }
+                    .infoItem{
+                        display:block;
+                        button, .two{
+                            display:block;
+                            margin-top: 15px;
+                            
+                        }
+                    }
+                    .radioItem{
+                        ul{
+                            display: block;
+                            li{
+                                display: block;
+                                width:100%;
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
