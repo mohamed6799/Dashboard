@@ -5,7 +5,7 @@
         h1{
             font-size: 30px;
             font-weight: 600;
-            letter-spacing: 5px;
+            letter-spacing: -1px;
             margin-bottom: 10px;
         }
         .colo{
@@ -21,7 +21,7 @@
             }
         }
     }
-    .ProfileContent{
+    .SettingsContent{
         margin-top: 40px;
         display:flex;
         justify-content: space-between;
@@ -358,7 +358,7 @@
 
 @media screen and (max-width: 1000px) {
     .content{
-        .ProfileContent{
+        .SettingsContent{
             .item{
                 width: 100%;
             }
@@ -368,7 +368,7 @@
 @media screen and (max-width:450px) {
     .content{
         padding: 20px 10px;
-        .ProfileContent{
+        .SettingsContent{
             .item{
                 padding-left:10px;
                 padding-right: 10px;

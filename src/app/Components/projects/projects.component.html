@@ -21,9 +21,9 @@
                     <div class="range">
                         <div class="contentRange" [ngStyle]=" {
                             'width.%':Project.salary*100/3000,
-                            'background-color' : Project.salary*100/3000 > 40 && Project.salary*100/3000 < 60?
-                            'var(--blue-alt-color)' :Project.salary*100/3000 > 60 ?
-                            'var(--green-color)':'var(--red-color)'
+                            'background-color' :Project.salary*100/3000 > 60 ?'var(--green-color)':
+                            Project.salary*100/3000 >= 40 && Project.salary*100/3000 <= 60?
+                            'var(--blue-color)' :'var(--red-color)'
                         }" ></div>
                     </div>
                     <div class="salary"><i class="fa-solid fa-dollar-sign" style="margin-right: 3px;"></i>{{Project.salary}}</div>

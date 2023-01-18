@@ -1,0 +1,24 @@
+.content{
+    background-color:var(--mainBackroundColor);
+    padding:30px 20px;
+    .head{
+        h1{
+            font-size: 30px;
+            font-weight: 600;
+            letter-spacing: -1px;
+            margin-bottom: 10px;
+        }
+        .colo{
+            width:120px;
+            background-color:white;
+            border-radius:10px;
+            .incolo{
+                width:35%;
+                background-color:#333;
+                height:3px;
+                border-radius:10px;
+
+            }
+        }
+    }
+}
