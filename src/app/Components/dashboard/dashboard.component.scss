@@ -116,7 +116,7 @@
                         .united{
                             display: flex;
                             align-items: center;
-                            margin-bottom: 15px;
+                            margin-bottom: 25px;
                             .circle{
                                 width: 26px;
                                 z-index: 5;
@@ -125,7 +125,7 @@
                                 background-color: white;
                                 border-radius: 50%;
                                 position:relative;
-                                margin-right: 15px;
+                                margin-right: 20px;
                                 .inCircle{
                                     width: 18px;
                                     height:18px;
@@ -138,8 +138,8 @@
                                 }
                             }
                             p{
-                                font-size: 16px;
-                                font-weight: 600;
+                                font-size: 17px;
+                                font-weight: 500;
                             }
                         }
                         &:nth-of-type(4){

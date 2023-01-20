@@ -21,4 +21,335 @@
             }
         }
     }
+
+    .ProfileContent{
+        
+        margin-top: 40px;
+        .info{
+            background-color: white;
+            padding: 0 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+
+            .person{
+                text-align: center;
+                width:23%;
+                img{
+                    width:120px;
+                    height:auto;
+                }
+                h1{
+                    margin:15px 0 10px 0;
+                    font-size: 20px;
+                    color:#333;
+                }
+                p{
+                    color:var(--grey-color)
+                }
+                .conRange{
+                    height:5px;
+                    width:60%;
+                    background-color: var(--mainBackroundColor);
+                    margin:10px auto;
+                    border-radius: 10px;
+                    .range{
+                        height: 5px;
+                        width:60%;
+                        background-color: var(--blue-alt-color);
+                        border-radius: 10px;
+                    }
+                }
+                .star{
+                    margin:10px 0;
+                    i{
+                        color:var(--orange-color);
+                        margin:0 2px;
+                    }
+                }
+                
+            }
+            .information{
+                width:77%;
+                .unit{
+                    border-left: 0.1px solid var(--headBackgroundColor);
+                    border-bottom: 0.1px solid var(--headBackgroundColor);
+                    padding:15px  25px;
+                    &:nth-of-type(4){
+                        border-bottom: none;
+                    }
+                    h2{
+                        margin-bottom: 16px;
+                        font-size: 18px;
+                        color:var(--grey-color)
+                    }
+                    .item{
+                        display:flex;
+                        padding: 0;
+                        align-items: center;
+                        p{
+                            margin: 10px 0 15px 0;
+                            width:33%;
+                            display:inline-block;
+                            font-size: 15px;
+                            color:var(--grey-color);
+                            span{
+                                color:#333;
+                            }
+                        }
+
+                    }
+                    .checkRange{
+                        label{
+                            display:block;
+                            width:100px;
+                            height: 21px;
+                            transition:0.3s ease;
+                            position: relative;
+                            background-color:var(--blue-color);
+                            border-radius: 20px;
+                            .range{
+                                position: absolute;
+                                right: 3px;
+                                top: 3px;
+                                transition: 0.5s ease;
+                                width: 15px;
+                                height: 15px;
+                                border-radius: 50%;
+                                background-color: white;
+                                text-align: center;
+                                i{
+                                    
+                                    transform: translateY(-20%);
+                                    font-size: 12px;
+                                    &:nth-of-type(2){
+                                        display:none;
+                                    }
+                                }
+                            }
+                        }
+                        #box:checked , #box2:checked , #box3:checked , #box4:checked{
+                            &~ label {
+                                background-color:var(--blue-color);
+                                .range{
+                                    right:3px;
+                                    i{
+                                        margin-top: 4px;
+                                        &:nth-of-type(1){
+                                            display:block;
+                                        }
+                                        &:nth-of-type(2){
+                                            display:none;
+                                        }
+                                    }
+                                }
+                            }
+                            
+                        }
+                        #box:not(:checked) , #box2:not(:checked) , #box3:not(:checked) , #box4:not(:checked){
+                            &~ label {
+                                background-color:var(--mainBackroundColor);
+                                .range{
+                                    right:76px;
+                                    i{
+                                        margin-top: 4px;
+                                        &:nth-of-type(1){
+                                            display:none;
+                                        }
+                                        &:nth-of-type(2){
+                                            display:block;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .skillAndActivitie{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            .activities , .skills{
+                width: 66%;
+                padding: 30px 20px;
+                background-color: white;
+                border-radius: 10px;
+            h1{
+                margin-bottom: 8px;
+                font-size: 25px;
+            }
+            .p1{
+                font-size: 15px;
+                color:var(--grey-color)
+            }
+            .Item{
+                margin-top: 10px;
+                .unit{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 0;
+                border-bottom: 0.2px solid var(--headBackgroundColor);
+                margin-bottom: 10px;
+                &:nth-of-type(4){
+                    border-bottom: none;
+                }
+                .left,.right{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        display:inline-block;
+                        width:70px;
+                        height: auto;
+                        border-radius:10px;
+                        margin-right: 10px;
+                    }
+                    .text{
+                        h2{
+                            margin-bottom: 6px;
+                            font-size: 17px;
+                            color: #333;
+                        }
+                        p{
+                            font-size: 14px;
+                            color: var(--grey-color);
+                        }
+                    }
+                }
+                .right{
+                    .text{
+                        text-align: right;
+                    }
+                }
+            }
+            }
+            .Item2{
+                margin-top: 10px;
+                .unit2{
+                    display: flex;
+                    align-items: center;
+                    padding: 15px 0;
+                    border-bottom: 0.2px solid var(--headBackgroundColor);
+                    margin-bottom: 10px;
+                    span{
+                        background-color:var(--headBackgroundColor);
+                        color:#333;
+                        padding:3px 8px;
+                        font-size: 14px;
+                        margin-right: 5px;
+                        border-radius: 5px;
+                    }
+                    &:nth-of-type(7){
+                        border-bottom: none;
+                    }
+                } 
+            }
+            }
+            .skills{
+                width: 32%;
+            }
+        }   
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .content{
+        padding: 20px 10px;
+        .ProfileContent{
+            .info{
+                display: block;
+                padding: 20px 10px;
+                .person{
+                 width: 100%;
+                   margin-bottom: 5px;
+                }
+                .information{
+                    width: 100%;
+                    .unit{
+                        width: 100%;
+                        h2{
+                            margin-bottom: 5px;
+                            font-size: 16px;
+                        }
+                        .item{
+                            display: block ;
+                            width: 100%;
+                            padding: 5px ;
+                            margin-bottom: 8px;
+                            p{
+                                margin-bottom: 0px;
+                                width:100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .skillAndActivitie{
+                display: block;
+                .activities , .skills{
+                    width: 100%;
+                    padding: 20px 10px !important;
+                    h1{
+                        font-size: 20px;
+                    }
+                    .Item{
+                        
+                        .unit{
+                            display: block !important;
+                            text-align: center;
+                            .text{
+                                margin-top: 10px !important;
+                                text-align: center;
+                                margin: auto;
+                                h2{
+                                    text-align: center;
+                                }
+                            }
+                            .left{
+                                display: block;
+                                text-align: center;
+                                
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .content{
+        .ProfileContent{
+            .info{
+                padding: 20px 0px;
+                display: block;
+                .information{
+                    width: 100%;
+                    
+                    .unit{
+                        padding: 10px  !important;
+                        .item{
+                            width: 100%;
+                            margin-bottom: 10px;
+                            p{
+                                font-size: 14px;
+                                span{
+                                    padding: 10px 0;
+                                    display: block !important;
+                                    margin-left:10px ;
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
