@@ -114,10 +114,14 @@
                         button{
                             margin: 0 3px;
                             font-size: 12px;
-                            padding: 6px 8px ;
                             border: 0;
                             border-radius: 5px;
                             color: white;
+                            a{
+                                padding: 5px 8px;
+                                border-radius: 5px;
+                                display: block;
+                            }
                             &:nth-of-type(1){
                                 background-color: var(--blue-alt-color);
                             }
